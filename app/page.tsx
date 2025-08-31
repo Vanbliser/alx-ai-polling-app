@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
+import { AuthNav } from "@/components/layout/auth-nav"
 
 export const metadata: Metadata = {
   title: "Polling App - Create and Vote on Polls",
@@ -30,14 +31,7 @@ export default function HomePage() {
             </svg>
             <span className="text-2xl font-bold text-gray-900 dark:text-white">Polling App</span>
           </div>
-          <div className="flex items-center space-x-4">
-            <Link href="/login">
-              <Button variant="ghost">Sign In</Button>
-            </Link>
-            <Link href="/register">
-              <Button>Get Started</Button>
-            </Link>
-          </div>
+          <AuthNav />
         </nav>
       </header>
 
@@ -75,9 +69,9 @@ export default function HomePage() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-6 h-6 text-blue-600"
                 >
                   <path d="M5 12h14" />
@@ -99,9 +93,9 @@ export default function HomePage() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-6 h-6 text-green-600"
                 >
                   <path d="M9 12l2 2 4-4" />
@@ -123,9 +117,9 @@ export default function HomePage() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-6 h-6 text-purple-600"
                 >
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
